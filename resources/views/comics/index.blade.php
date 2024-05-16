@@ -1,11 +1,11 @@
 @extends('layout.main')
 
 @section('content')
-    <h1 class="my-5">Fumetti</h1>
+    <h1 class="titolo my-5 text-center">Fumetti</h1>
     <div class="container">
         <div class="row">
             <div class="col">
-                <table class="table">
+                <table class="table table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Titolo</th>

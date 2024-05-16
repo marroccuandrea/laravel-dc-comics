@@ -1,3 +1,20 @@
-img {
-    height: 100%;
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/032/169/846/original/cartoon-comic-background-pop-art-red-comics-book-cartoon-comic-background-with-dot-pattern-halftone-abstract-halftone-illustration-vintage-backdrop-for-comic-superhero-text-speech-bubble-vector.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .titolo {
+        text-shadow: 1px 1px 5px yellow;
+    }
+
+    .fumetto {
+        background-color: transparent;
+    }
+}
+
+.card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border: none;
 }
