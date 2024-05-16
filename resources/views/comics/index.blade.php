@@ -13,6 +13,9 @@
                             <th scope="col">Serie</th>
                             <th scope="col">Tipo</th>
                             <th scope="col">Data di uscita</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,6 +26,16 @@
                                 <td>{{ $product->series }}</td>
                                 <td>{{ $product->type }}</td>
                                 <td>{{ $product->sale_date }}</td>
+                                <td>
+                                    <a class="btn btn-success " href="{{ route('comics.show', $product->id) }}"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-danger " href=""><i class="fa-solid fa-explosion"></i></a>
+                                </td>
+                                <td>
+                                    <a class="btn btn-warning " href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                                </td>
                             </tr>
                         @empty
                             <h2>Nessun prodotto trovato</h2>
