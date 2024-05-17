@@ -5,6 +5,11 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                @if (session('deleted'))
+                    <div class="alert alert-info" role="alert">
+                        {{ session('deleted') }}
+                    </div>
+                @endif
                 <table class="table table-dark">
                     <thead>
                         <tr>
@@ -31,7 +36,13 @@
                                             class="fa-solid fa-eye"></i></a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-danger " href="#"><i class="fa-solid fa-explosion"></i></a>
+                                    <form action="{{ route('comics.destroy', $product->id) }}" method="POST"
+                                        onsubmit="return confirm('Sei sicuro di voler eliminare questo fumetto?')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger"><i
+                                                class="fa-solid fa-explosion"></i></button>
+                                    </form>
                                 </td>
                                 <td>
                                     <a class="btn btn-warning " href="{{ route('comics.edit', $product->id) }}"><i

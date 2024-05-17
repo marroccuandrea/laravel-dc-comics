@@ -1,6 +1,8 @@
 @extends('layout.main')
 
 @section('content')
+    <h1 class="titolo">{{ $comic->title }}</h1>
+    <a class="btn btn-warning mb-3" href="{{ route('comics.edit', $comic->id) }}"><i class="fa-solid fa-pen-to-square"></i></a>
     <div class="row">
         <div class="col-8">
 
