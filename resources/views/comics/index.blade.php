@@ -31,10 +31,11 @@
                                             class="fa-solid fa-eye"></i></a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-danger " href=""><i class="fa-solid fa-explosion"></i></a>
+                                    <a class="btn btn-danger " href="#"><i class="fa-solid fa-explosion"></i></a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-warning " href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a class="btn btn-warning " href="{{ route('comics.edit', $product->id) }}"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                 </td>
                             </tr>
                         @empty
