@@ -6,9 +6,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('nuova-pagina') }}">Nuova Pagina</a>
-                    </li> --}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('comics.create') }}">Crea un nuovo fumetto</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('comics.index') }}">Fumetti</a>
                     </li>
