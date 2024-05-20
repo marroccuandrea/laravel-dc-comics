@@ -11,7 +11,7 @@
             </ul>
         </div>
     @endif
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form class="compilate" action="{{ route('comics.store') }}" method="POST">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label fw-bold fs-5">Titolo</label>
