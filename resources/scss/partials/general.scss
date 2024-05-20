@@ -10,6 +10,18 @@ body {
     .fumetto {
         background-color: transparent;
     }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.45);
+        padding: 10px;
+        border-radius: 2%;
+
+        small {
+            // text-shadow: -2px 1px 0px rgba(226, 203, 9, 1);
+            color: rgb(192, 0, 0);
+
+        }
+    }
 }
 
 .card {
